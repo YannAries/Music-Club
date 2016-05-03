@@ -1,61 +1,4 @@
-<!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Music Club A Music Category Flat Bootstarp Resposive Website Template | Typo :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--flexslider-->
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<!--//flexslider-->
-</head>
-<body>
-<!--header-->
-<div class="header header-main">
-	<div class="container">
-				<div class="header-top">
-				<div class="logo">
-					<h1><a href="index.html">Music Club</a></h1>
-				</div>
-				<div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt=""> </span>
-					<ul>
-						<li ><a href="index.html" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i>Home  </a> </li>
-						<li ><a href="album.html" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums  </a> </li>
-						<li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Blog</a></li>
-						<li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>Events </a></li>
-						<li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Mail </a></li>
-					<div class="clearfix"> </div>
-					</ul>
-					<!--script-->
-				<script>
-					$("span.menu").click(function(){
-						$(".top-nav ul").slideToggle(500, function(){
-						});
-					});
-			</script>				
-				</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--//header-->
-<!--content-->
+<?php require_once 'partials/header.php';?>
 	<div class="container">
 	<div class="page">
 		<h3 class="typo1">Typography</h3>
@@ -64,7 +7,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="page-header">
        	<h3>Headings</h3>
       </div>
-  
+
   <div class="bs-example">
     <table class="table">
       <tbody>
@@ -182,8 +125,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </ul>
       </div>
         <!--//nav-->
-       
-      
+
+
         <!--Progress bars-->
         <div class="page-header">
         <h3>Progress bars</h3>
@@ -340,21 +283,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//content-->
 
 <!--footer-->
-<div class="footer">
-	<div class="container">
-		<h2><a href="index.html">Music Club</a></h2>
-		
-					<ul>
-						<li ><a href="index.html" >Home  </a> </li>
-						<li ><a href="album.html" >Albums  </a> </li>
-						<li><a href="blog.html"  >Blog</a></li>
-						<li><a href="typo.html" >Events </a></li>
-						<li><a href="mail.html" >Mail </a></li>
-						<div class="clearfix"> </div>
-					</ul>
-					<p > © 2015 Music Club All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
-	</div>
-</div>
-<!--//footer-->
-</body>
-</html>
+<?php require_once 'partials/footer.php';?>
