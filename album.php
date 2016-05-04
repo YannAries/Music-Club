@@ -1,4 +1,4 @@
-<!--A Design by W3layouts 
+<!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -13,11 +13,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/modernizr.custom.97074.js"></script>
@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						$(".top-nav ul").slideToggle(500, function(){
 						});
 					});
-			</script>				
+			</script>
 				</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</a>
 					</li>
-					<li>	
+					<li>
 						<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
 							<img src="images/a5.jpg" alt="" />
 							<div>
@@ -153,16 +153,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</ul>
 			</section>
-			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
 		<script type="text/javascript">
 			$(function() {
-			
+
 				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
 			});
 		</script>
         </div>
-		
+
 	</div>
 <!--//gallery-->
 <!--footer-->
