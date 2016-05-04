@@ -9,9 +9,9 @@
 				<div class="col-md-9">
 
 					<div class="blog-grid">
-						<a href="single.html"><img class="img-responsive" src="images/b1.jpg" alt="" /></a>
+						<a href="single.php"><img class="img-responsive" src="images/b1.jpg" alt="" /></a>
 						<div class="lone-line">
-							<h4><a href="single.html">Social Sense Perception of Loneliness</a></h4>
+							<h4><a href="single.php">Social Sense Perception of Loneliness</a></h4>
 							<ul class="grid-blog">
 								<li><span><i class="glyphicon glyphicon-time"> </i>08.09.2014</span></li>
 								<li><a href="#"><i class="glyphicon glyphicon-comment"> </i>5 Comment</a></li>
@@ -19,14 +19,14 @@
 							</ul>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
 							<p class="due">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanl</p>
-							<a class="more" href="single.html">Read More</a>
+							<a class="more" href="single.php">Read More</a>
 						</div>
 					</div><!-- .blog-grid -->
 
 					<div class="blog-grid">
-						<a href="single.html"><img class="img-responsive" src="images/b2.jpg" alt="" /></a>
+						<a href="single.php"><img class="img-responsive" src="images/b2.jpg" alt="" /></a>
 						<div class="lone-line">
-							<h4><a href="single.html">Social Sense Perception of Loneliness</a></h4>
+							<h4><a href="single.php">Social Sense Perception of Loneliness</a></h4>
 							<ul class="grid-blog">
 								<li><span><i class="glyphicon glyphicon-time"> </i>08.09.2014</span></li>
 								<li><a href="#"><i class="glyphicon glyphicon-comment"> </i>5 Comment</a></li>
@@ -34,7 +34,7 @@
 							</ul>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
 							<p class="due">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanl</p>
-							<a class="more" href="single.html">Read More</a>
+							<a class="more" href="single.php">Read More</a>
 						</div>
 					</div><!-- .blog-grid -->
 

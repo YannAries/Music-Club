@@ -6,6 +6,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 $pages = array(
 	'Home' => 'index.php',
-	'News' => 'blog.php',
-	'Contact' => 'mail.php',
+	'News' => 'news.php',
+	'Contact' => 'contact.php',
 );

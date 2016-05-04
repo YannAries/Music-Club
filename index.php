@@ -48,7 +48,7 @@
 
 						<div class="content-mid">
 							<div class="col-md-4 mid">
-								<a href="single.html"><img src="images/1.jpg" alt="" class="img-responsive">
+								<a href="single.php"><img src="images/1.jpg" alt="" class="img-responsive">
 									<div class="mid1">
 										<h4>My Album</h4>
 										<i class="glyphicon glyphicon-circle-arrow-right"></i>
@@ -58,7 +58,7 @@
 							</div>
 
 							<div class="col-md-4 mid">
-								<a href="single.html"><img src="images/2.jpg" alt="" class="img-responsive">
+								<a href="single.php"><img src="images/2.jpg" alt="" class="img-responsive">
 									<div class="mid1">
 										<h4>My Album</h4>
 										<i class="glyphicon glyphicon-circle-arrow-right"></i>
@@ -68,7 +68,7 @@
 							</div>
 
 							<div class="col-md-4 mid">
-								<a href="single.html"><img src="images/4.jpg" alt="" class="img-responsive">
+								<a href="single.php"><img src="images/4.jpg" alt="" class="img-responsive">
 									<div class="mid1">
 										<h4>My Album</h4>
 										<i class="glyphicon glyphicon-circle-arrow-right"></i>
@@ -104,7 +104,7 @@
 										<div class="col-md-10 six1">
 											<h5>It is a long established fact that</h5>
 											<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-											<a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+											<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
 										</div>
 
 										<div class="clearfix"> </div>
@@ -121,7 +121,7 @@
 										<div class="col-md-10 six1">
 											<h5>It is a long established fact that</h5>
 											<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-											<a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
+											<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
 											<div class="clearfix"> </div>
 										</div>
 								</div><!-- .col-md-6 new-more -->
@@ -142,7 +142,7 @@
 											<div class="col-md-10 six1">
 												<h5>It is a long established fact that</h5>
 												<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-												<a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
+												<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
 											<div class="clearfix"> </div>
 										</div>
 
@@ -157,7 +157,7 @@
 												<div class="col-md-10 six1">
 													<h5>It is a long established fact that</h5>
 													<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-													<a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+													<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
 												</div>
 
 												<div class="clearfix"> </div>
