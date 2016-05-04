@@ -1,6 +1,8 @@
 <?php require_once 'partials/header.php';?>
 
+
 <!--content-->
+
 	<div class="blog">
 
 		<div class="container">
@@ -8,6 +10,7 @@
 				<div class="col-md-9">
 
 					<div class="blog-grid">
+
 						<img class="img-responsive" src="images/b1.jpg" alt="" />
 						<div class="lone-line">
 							<h4>Social Sense Perception of Loneliness</h4>
@@ -149,6 +152,7 @@
 						</div><!-- .cate-top -->
 
 						<div class="cate-top">
+
 							<h4>LAST COMMENTS</h4>
 
 							<div class="cate-cate">
