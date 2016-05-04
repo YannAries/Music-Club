@@ -6,7 +6,7 @@ define('USER', 'root');
 // Mot de passe de connexion à la base
 define('PASS', '');
 // Base de données sur laquelle on va faire les requêtes
-define('DB', 'shop');
+define('DB', 'music');
 
 // Le bloc try test tout ce qui se situe à l'intérieur
 try {
