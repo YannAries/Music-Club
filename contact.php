@@ -1,5 +1,63 @@
-<?php require_once 'partials/header.php' ?>
+<?php require_once 'inc/config.php';
 
+// On réceptionne les données du formulaire
+$nom = !empty($_POST['nom']) ? $_POST['nom'] : '';
+$email = !empty($_POST['email']) ? $_POST['email'] : '';
+$sujet = !empty($_POST['sujet']) ? $_POST['sujet'] : '';
+$message = !empty($_POST['message']) ? $_POST['message'] : '';
+$status = false;
+$errors = array();
+
+// Le formulaire a été soumis, on a appuyé sur le bouton "Envoyer"
+if (!empty($_POST)) { 
+	
+	// On vérifie les erreurs possibles
+	if (empty($nom)) {
+		$errors['nom'] = 'Veuillez renseigner votre nom';
+	}
+	if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$errors['email'] = 'Veuillez renseigner un email valide';
+	}
+	if (empty($sujet) || !filter_var($sujet)) {
+		$errors['sujet'] = 'Veuillez renseigner votre sujet';
+	}
+	if (empty($message)) {
+		$errors['message'] = 'Votre message est vide';
+	} else if (strlen($message) > 65535) {
+		$errors['message'] = 'Votre message ne doit pas dépasser 65535 caractères';
+	}
+
+	//debug($errors);
+	
+	// Aucune erreur dans le formulaire, tous les champs ont été saisis correctement
+	if (empty($errors)) {
+		$query = $db->prepare('INSERT INTO mail SET nom = :nom, email = :email, sujet = :sujet, message = :message, date = NOW()');
+		// Pour chacune des variables précédées d'un : on doit faire un bindValue pour passer la valeur à la requête
+		$query->bindValue(':nom', $nom, PDO::PARAM_STR);
+		$query->bindValue(':email', $email, PDO::PARAM_STR);
+		$query->bindValue(':sujet', $sujet, PDO::PARAM_STR);
+		$query->bindValue(':message', $message, PDO::PARAM_STR);
+
+		// On execute la requête
+		$query->execute();
+
+		// On récupère le numéro de la ligne automatiquement généré par MySQL avec l'attribut AUTO_INCREMENT
+		$insert_id = $db->lastInsertId();
+		if (!empty($insert_id)) {
+			$status = true;
+		} 
+		else {
+			$errors = array('db_error' => 'Erreur interne, merci de réessayer ultérieurement!');
+		}
+	}
+}
+
+$result = array(
+	'status' => $status,
+	'errors' => $errors
+);
+
+?>
 
 <!--content-->
 			<div class="contact">
@@ -31,7 +89,7 @@
 									<span>Message :</span>
 									<textarea> </textarea>
 								</div>
-								<input type="submit" value="Send">
+								<input type="submit" name="Send" value="Envoyer">
 							</form>
 						</div>
 						<div class="address">
@@ -47,7 +105,7 @@
 							<div class="clearfix"> </div>
 						</div>
 						<div class="address-grid grid-address">
-							<i class="glyphicon glyphicon-phone"></i>
+							<i class="glyphicon glyphicon-sujet"></i>
 							<div class="address1">
 								<p>+885699655</p>
 							</div>
