@@ -11,7 +11,7 @@
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 15px;
-		color
+		color: #000000;
 
 	}
 	textarea{
@@ -22,13 +22,14 @@
 
 </style>
 <form action="" name="review" method="POST">
-	titre: <input type="text" name="title">
-	auteur: <input type="text" name="author">
+	Artiste : <input type="text" name="author" placeholder="Prince">
+	Album : <input type="text" name="album" placeholder="Lovesexy">
+	Titre : <input type="text" name="title" placeholder="Glam Slam">
 </form>
 
-<textarea name="content" form="review" id="" cols="150" rows="25"></textarea>
+<textarea name="content" form="review" id="" cols="150" rows="25" placeholder="votre revue..."></textarea>
 
 <form action="" name="review" method="POST">
-<input type="submit">
+<input type="submit" name="Ajouter" value="Ajouter">
 </form>
 <?php require_once 'partials/footer.php'; ?>
