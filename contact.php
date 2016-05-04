@@ -1,4 +1,5 @@
-<?php require_once 'inc/config.php';
+<?php 
+require_once 'partials/header.php';
 
 // On réceptionne les données du formulaire
 $nom = !empty($_POST['nom']) ? $_POST['nom'] : '';
@@ -62,7 +63,7 @@ $result = array(
 <!--content-->
 			<div class="contact">
 				<div class="container">
-					<div class="contact-top ">
+					<div class="contact-top">
 						<h3>Nous contacter</h3>
 					</div>		
 		
