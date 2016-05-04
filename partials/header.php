@@ -1,9 +1,4 @@
-A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
- -->
+<?php require_once 'inc/config.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +24,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 			<?php include 'partials/navbar.php' ?>
 
-			<?php include 'partials/slider.php' ?>
+			<?php
+			if ($current_page == 'index') {
+				include 'partials/slider.php';
+			}
+			?>
 
 				<!--FlexSlider-->
 				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
@@ -50,4 +49,4 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		</div><!-- .container -->
 
-	</div><!-- .header
+	</div><!-- .header -->
