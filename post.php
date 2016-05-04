@@ -1,8 +1,16 @@
-<?php require_once 'partials/header.php';?>
+<?php require_once 'partials/header.php';
 
+$id = $_GET['id'];
+
+$query = $db->prepare('SELECT * FROM news WHERE id= :id');
+$query->bindValue(':id', $id);
+$query->execute();
+$post = $query->fetch();
+// debug($post);
+
+?>
 
 <!--content-->
-
 	<div class="blog">
 
 		<div class="container">
@@ -13,19 +21,21 @@
 
 						<img class="img-responsive" src="images/b1.jpg" alt="" />
 						<div class="lone-line">
-							<h4>Social Sense Perception of Loneliness</h4>
-							<ul class="grid-blog">
-								<li><span><i class="glyphicon glyphicon-time"> </i>08.09.2014</span></li>
-								<li><a href="#"><i class="glyphicon glyphicon-comment"> </i>5 Comment</a></li>
-								<li><a href="#"><i class="glyphicon glyphicon-share"> </i>Share</a></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
-							<p class="due">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanl</p>
 
+							<h4><?= $post['title'] ?></h4>
+
+								<ul class="grid-blog">
+									<li><a href="#"><i class="glyphicon glyphicon-user"> </i><?= $post['author'] ?></a></li>
+									<li><span><i class="glyphicon glyphicon-time"> </i><?= $post['creation_date'] ?></span></li>
+									<li><a href="#"><i class="glyphicon glyphicon-comment"> </i>5 Comment</a></li>
+									<li><a href="#"><i class="glyphicon glyphicon-share"> </i>Partager</a></li>
+								</ul>
+							<p><?= $post['content'] ?></p>
+							<br>
 							<div class="comment-top">
 
 								<div class="story">
-									<h4 >comments (3)</h4>
+									<h4>comments (3)</h4>
 								</div>
 
 								<div class="comments-top-top">

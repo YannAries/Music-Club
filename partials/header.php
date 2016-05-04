@@ -29,7 +29,6 @@
 				include 'partials/slider.php';
 			}
 			?>
-
 				<!--FlexSlider-->
 				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 				<script defer src="js/jquery.flexslider.js"></script>
