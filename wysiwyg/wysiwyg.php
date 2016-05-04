@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once 'inc/config.php' ?>
 <head>
   <meta charset="UTF-8">
   <title>Summernote</title>
@@ -16,12 +15,6 @@
 echo '<pre>';
 print_r($_POST);
 echo '</pre>';
-
-$query= $db->prepare('INSERT INTO review SET title= :title, author= :author, content= :content, creation_date= NOW()');
-$query->bindValue(':title', $_POST['title']);
-$query->bindValue(':author', $_POST['author']);
-$query->bindValue(':content', $_POST['content']);
-$query->execute();
 ?>
 
 <div class="summernote container">

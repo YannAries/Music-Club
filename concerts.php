@@ -1,20 +1,27 @@
-header
-<?php require_once 'partials/header.php';?>
+<?php require_once 'partials/header.php';
+$query= $db->query('SELECT picture FROM review');
+$images= $query->fetchAll();
+debug($images);
+?>
+
 	<div class="gallery">
 		<div class="container">
 			<h3>My Albums</h3>
 			<section>
 				<ul id="da-thumbs" class="da-thumbs">
+				<?php foreach ($images as $key => $image) {?>
 					<li>
 						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-							<img src="images/a1.jpg" alt="" />
+							<img src="images/reviews/<?= $image['picture'] ?>" alt="" />
 							<div>
 								<h5>Music</h5>
 								<span>non suscipit leo fringilla non suscipit leo fringilla molestie</span>
 							</div>
 						</a>
 					</li>
-					<li>
+				<?php } ?>
+
+					 <li>
 						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
 							<img src="images/a2.jpg" alt="" />
 							<div>
