@@ -25,7 +25,7 @@
 			<?php include 'partials/navbar.php' ?>
 
 			<?php
-			if ($current_page == 'index') {
+			if ($current_page == 'index.php') {
 				include 'partials/slider.php';
 			}
 			?>
