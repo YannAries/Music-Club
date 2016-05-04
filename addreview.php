@@ -27,7 +27,7 @@
 	Titre : <input type="text" name="title" placeholder="Glam Slam">
 </form>
 
-<textarea name="content" form="review" id="" cols="150" rows="25" placeholder="votre revue..."></textarea>
+<textarea name="content" form="review" id="" cols="150" rows="25" placeholder="Taper ici votre revue..."></textarea>
 
 <form action="" name="review" method="POST">
 <input type="submit" name="Ajouter" value="Ajouter">
