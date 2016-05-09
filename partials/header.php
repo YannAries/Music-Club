@@ -6,6 +6,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script>
 	<!-- Custom Theme files -->
 	<!--theme-style-->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -34,9 +36,9 @@
 				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 				<script defer src="js/jquery.flexslider.js"></script>
 				<script type="text/javascript">
-					$(function(){
+					/*$(function(){
 						SyntaxHighlighter.all();
-					});
+					});*/
 					$(window).load(function(){
 						$('.flexslider').flexslider({
 							animation: "slide",
