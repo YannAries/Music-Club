@@ -11,5 +11,22 @@
 			<p > © <?= date('Y') ?> Music Club All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
 	</div>
 </div><!--//footer-->
+
+	<script>
+	$(document).ready(function() {
+
+		$('#form-search .dropdown-menu').on('click', function (e) {
+
+			if ($(e.target).is('button')) {
+				return true;
+			}
+
+			e.preventDefault();
+			e.stopPropagation();
+		});
+
+	});
+	</script>
+
 </body>
 </html>

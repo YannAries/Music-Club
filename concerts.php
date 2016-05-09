@@ -1,5 +1,5 @@
-header
 <?php require_once 'partials/header.php';?>
+
 	<div class="gallery">
 		<div class="container">
 			<h3>My Albums</h3>

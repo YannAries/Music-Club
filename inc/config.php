@@ -9,3 +9,8 @@ $pages = array(
 	'News' => 'news.php',
 	'Contact' => 'contact.php',
 );
+
+$query = $db->query('SELECT * FROM style ORDER BY style_name ASC');
+$styles = $query->fetchAll();
+
+// debug ($styles);
