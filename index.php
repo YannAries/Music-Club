@@ -1,5 +1,15 @@
 
-<?php require_once 'partials/header.php';?>
+<?php require_once 'partials/header.php';
+// debug($_SESSION);
+
+$query= $db->query('SELECT * FROM review ORDER BY creation_date DESC LIMIT 3');
+$reviews= $query->fetchAll();
+
+$query= $db->query('SELECT * FROM news ORDER BY creation_date DESC LIMIT 4');
+$news= $query->fetchAll();
+?>
+
+
 
 			<div class="content">
 
@@ -10,9 +20,9 @@
 						<div class="col-md-7 content-top1">
 							<h3>Welcome</h3>
 							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-								, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose,
+							, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose,
 
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
 						</div>
 
 						<div class="col-md-5 top-col">
@@ -46,36 +56,20 @@
 
 					</div><!--//content-top-->
 
+
+						<?php foreach ($reviews as $key => $review) {?>
 						<div class="content-mid">
 							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/1.jpg" alt="" class="img-responsive">
+								<a href="review.php?id=<?= $review['id'] ?>"><img src="images/reviews/<?= $review['picture'] ?>" alt="" class="img-responsive">
 									<div class="mid1">
-										<h4>My Album</h4>
+										<h4><?= $review['title'] ?></h4>
 										<i class="glyphicon glyphicon-circle-arrow-right"></i>
 										<div class="clearfix"> </div>
 									</div>
 								</a>
 							</div>
 
-							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/2.jpg" alt="" class="img-responsive">
-									<div class="mid1">
-										<h4>My Album</h4>
-										<i class="glyphicon glyphicon-circle-arrow-right"></i>
-										<div class="clearfix"> </div>
-									</div>
-								</a>
-							</div>
-
-							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/4.jpg" alt="" class="img-responsive">
-									<div class="mid1">
-										<h4>My Album</h4>
-										<i class="glyphicon glyphicon-circle-arrow-right"></i>
-										<div class="clearfix"> </div>
-									</div>
-								</a>
-							</div>
+							<?php } ?>
 
 							<div class="clearfix"> </div>
 
@@ -88,23 +82,25 @@
 						<div class="container">
 
 							<div class="content-mid-top">
-								<h3> Team</h3>
+								<h3> News</h3>
 							</div>
 
 							<div class="news">
+
+								<?php foreach ($news as $key => $nouvelle) {?>
 
 								<div class="col-md-6 new-more">
 
 									<div class="new-more1">
 
 										<div class="col-md-2 six">
-											<img class="img-responsive" src="images/te.jpg" alt="">
+											<img class="img-responsive" src="images/news/<?= $nouvelle['picture'] ?>" alt="">
 										</div>
 
 										<div class="col-md-10 six1">
-											<h5>It is a long established fact that</h5>
-											<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-											<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+											<h5><?= $nouvelle['title'] ?></h5>
+											<p><?= substr($nouvelle['content'],0,100) ?></p>
+											<a href="post.php?id=<?= $nouvelle['id'] ?>"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
 										</div>
 
 										<div class="clearfix"> </div>
@@ -112,59 +108,10 @@
 									</div><!-- .new-more1 -->
 
 								</div><!-- .col-md-6 new-more -->
-
-								<div class="col-md-6 new-more">
-									<div class=" new-more1">
-										<div class="col-md-2 six">
-											<img class="img-responsive" src="images/te1.jpg" alt="">
-										</div>
-										<div class="col-md-10 six1">
-											<h5>It is a long established fact that</h5>
-											<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-											<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
-											<div class="clearfix"> </div>
-										</div>
-								</div><!-- .col-md-6 new-more -->
-
 								<div class="clearfix"> </div>
+								<?php } ?>
 
-							</div><!-- .news -->
 
-							<div class="news">
-
-									<div class="col-md-6 new-more">
-										<div class=" new-more1">
-
-											<div class="col-md-2 six">
-												<img class="img-responsive" src="images/te3.jpg" alt="">
-											</div>
-
-											<div class="col-md-10 six1">
-												<h5>It is a long established fact that</h5>
-												<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-												<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>
-											<div class="clearfix"> </div>
-										</div>
-
-									</div><!-- .col-md-6 new-more -->
-
-									<div class="col-md-6 new-more">
-											<div class=" new-more1">
-												<div class="col-md-2 six">
-													<img class="img-responsive" src="images/te2.jpg" alt="">
-												</div>
-
-												<div class="col-md-10 six1">
-													<h5>It is a long established fact that</h5>
-													<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-													<a href="single.php"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
-												</div>
-
-												<div class="clearfix"> </div>
-											</div>
-									</div><!-- .col-md-6 new-more -->
-
-									<div class="clearfix"> </div>
 
 							</div><!-- .news -->
 
