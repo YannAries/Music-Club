@@ -12,7 +12,7 @@ $count_search_results = 0;
 if (!empty($_GET['search'])) {
 	$search = $_GET['search'];
 
-	$query = $db->prepare('SELECT * FROM artists WHERE name LIKE :search OR members LIKE :search OR style LIKE :search OR country LIKE :search');
+	$query = $db->prepare('SELECT * FROM artists WHERE name LIKE :search OR members LIKE :search OR style LIKE :search OR country LIKE :search OR bio LIKE :search');
 	$query->bindValue(':search', '%'.$search.'%', PDO::PARAM_STR);
 	$query->execute();
 	$search_results = $query->fetchAll();
@@ -36,12 +36,12 @@ if (!empty($_GET['style'])) {
 //FIXME : Merge search/style
 $search = $style;
 
-?>	 
+?>
 
 
 <div class="container">
-	
-	<div class="row">				
+
+	<div class="row">
 
 		<div class="col-md-12">
 
@@ -59,7 +59,7 @@ $search = $style;
 						$picture = '';
 					?>
 					<a href="search.php?id=<?= $search['id'] ?>" class="list-group-item clearfix">
-						<img width="50" height="65" src="<?= $picture ?>">
+						<!-- <img width="50" height="65" src="<?= $picture ?>"> -->
 						<div class="content">
 							<h4 class="list-group-item-heading"><?= $artist['name'] ?></h4>
 	    					<p class="list-group-item-text"><?= $artist['style'] ?></p>
