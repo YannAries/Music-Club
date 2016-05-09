@@ -1,5 +1,12 @@
 
-<?php require_once 'partials/header.php';?>
+<?php require_once 'partials/header.php';
+debug($_SESSION);
+
+$query= $db->query('SELECT * FROM review ORDER BY creation_date DESC LIMIT 3');
+$reviews= $query->fetchAll();
+?>
+
+
 
 			<div class="content">
 
@@ -46,36 +53,22 @@
 
 					</div><!--//content-top-->
 
+
+						<?php foreach ($reviews as $key => $review) {?>
 						<div class="content-mid">
 							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/1.jpg" alt="" class="img-responsive">
+								<a href="review.php?id=<?= $review['id'] ?>"><img src="images/reviews/<?= $review['picture'] ?>" alt="" class="img-responsive">
 									<div class="mid1">
-										<h4>My Album</h4>
+										<h4><?= $review['title'] ?></h4>
 										<i class="glyphicon glyphicon-circle-arrow-right"></i>
 										<div class="clearfix"> </div>
 									</div>
 								</a>
 							</div>
 
-							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/2.jpg" alt="" class="img-responsive">
-									<div class="mid1">
-										<h4>My Album</h4>
-										<i class="glyphicon glyphicon-circle-arrow-right"></i>
-										<div class="clearfix"> </div>
-									</div>
-								</a>
-							</div>
+							<?php } ?>
 
-							<div class="col-md-4 mid">
-								<a href="single.php"><img src="images/4.jpg" alt="" class="img-responsive">
-									<div class="mid1">
-										<h4>My Album</h4>
-										<i class="glyphicon glyphicon-circle-arrow-right"></i>
-										<div class="clearfix"> </div>
-									</div>
-								</a>
-							</div>
+							
 
 							<div class="clearfix"> </div>
 

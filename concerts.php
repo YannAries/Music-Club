@@ -1,3 +1,4 @@
+header
 <?php require_once 'partials/header.php';?>
 	<div class="gallery">
 		<div class="container">
