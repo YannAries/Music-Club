@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +19,7 @@ if(!empty($_SESSION) && ($_SESSION['user_type'] == 1)){
 
 
 if(!empty($_POST)){
-$query= $db->prepare('INSERT INTO review SET title= :title, author= :author, content= :content, picture= :picture, creation_date= NOW()');
+$query= $db->prepare('INSERT INTO news SET title= :title, author= :author, content= :content, picture= :picture, creation_date= NOW()');
 $query->bindValue(':title', $_POST['title']);
 $query->bindValue(':author', $_POST['author']);
 $query->bindValue(':content', $_POST['content']);
@@ -65,7 +64,7 @@ $query->execute();
 if(!empty($_POST)){
 $tmp_name = $_FILES["cover"]["tmp_name"];
 $name = $_FILES["cover"]["name"];
-$uploads_dir = 'images/reviews';
+$uploads_dir = 'images/news';
 
 
 move_uploaded_file($tmp_name,"$uploads_dir/$name");
