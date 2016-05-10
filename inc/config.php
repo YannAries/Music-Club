@@ -8,21 +8,19 @@ session_name('music_session');
 session_start();
 
 $pages = array(
-	'Home' => 'index.php',
-	'News' => 'news.php',
-	'reviews' => 'reviews.php',
-	'Contact' => 'contact.php',
-	's\'enregistrer' => 'register.php',
-	's\'identifier' => 'login.php', 
+	'<i class="glyphicon glyphicon-home"></i> Home' => 'index.php',
+	'<i class="glyphicon glyphicon-globe"></i> News' => 'news.php',
+	'<i class="glyphicon glyphicon-headphones"></i> Reviews' => 'reviews.php',
+	'<i class="glyphicon glyphicon-envelope"></i> Contact' => 'contact.php',
+	'<i class="glyphicon glyphicon-edit"></i> S\'enregistrer' => 'register.php',
+	'<i class="glyphicon glyphicon-check"></i> S\'identifier' => 'login.php',
 );
 
 $query = $db->query('SELECT * FROM style ORDER BY style_name ASC');
 $styles = $query->fetchAll();
 
-// debug ($styles);
-
 if(!empty($_SESSION)){
-	$pages['se déconnecter'] = 'logout.php';
+	$pages['<i class="glyphicon glyphicon-share"></i> Se déconnecter'] = 'logout.php';
 	unset($pages['s\'enregistrer']);
 	unset($pages['s\'identifier']);
 }
