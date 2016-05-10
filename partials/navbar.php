@@ -16,7 +16,7 @@
 					}
 			?>
 
-			<li ><a href="<?= $page_url ?>" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-home"></i><?= $page_name ?>  </a>
+			<li ><a href="<?= $page_url ?>" class="hvr-sweep-to-bottom color1"><?= $page_name ?>  </a>
 			</li>
 
 			<?php } ?>

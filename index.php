@@ -123,12 +123,11 @@ $news= $query->fetchAll();
 								<div class="container">
 									<div class="content-bottom-top">
 										<div class="col-md-6 content-bottom-top1">
-											<h3>Kasertas lertyasea deeraeser</h3>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-												Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+											<h3>Prince</h3>
+											<p>L’artiste américain Prince est mort jeudi 21 avril à l’âge de 57 ans. Les hommages des fans et des personnalités en faveur d’une des légendes de la musique se sont multipliés après l’annonce, notamment à Minneapolis (Minnesota), la ville d’origine du guitariste et chanteur. Certains, comme ce Petit Prince de Saint-Exupéry aux couleurs du chanteur, ont ému les internautes.</p>
 											</div>
 											<div class="col-md-6 bottom-co1">
-												<img class="img-responsive" src="images/3.jpg" alt="">
+												<img class="img-responsive" src="images/prince.jpg" alt="prince">
 
 											</div>
 										</div>
