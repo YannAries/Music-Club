@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 <head>
   <meta charset="UTF-8">
-  <title>Summernote</title>
+  <title>Music Club</title>
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
@@ -21,17 +21,16 @@ echo '</pre>';
   <div class="row">
     <div class="span12">
       <h2>New review</h2>
-
     </div>
   </div>
+
   <div class="row">
     <form class="span12" id="postForm" action="" method="POST" enctype="multipart/form-data" onsubmit="return postForm()">
-      titre: <input type="text" name="title">
-      auteur: <input type="text" name="author">
+      Titre: <input type="text" name="title">
+      Auteur: <input type="text" name="author">
       <fieldset>
         <p class="container">
-          <textarea class="input-block-level" id="summernote" name="content" rows="18">
-          </textarea>
+          <textarea class="input-block-level" id="summernote" name="content" rows="18"></textarea>
         </p>
       </fieldset>
       <button type="submit" class="btn btn-primary">Save changes</button>

@@ -27,7 +27,6 @@ function getProductPicture($picture = '') {
     return 'http://placehold.it/320x150';
 }
 
-
 function cutString($text, $max_length = 0, $end = '...', $sep = '[@]') {
 
     if ($max_length > 0 && strlen($text) > $max_length) {

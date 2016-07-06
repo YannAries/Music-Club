@@ -7,3 +7,4 @@ if (empty($pass)) {
 }
 
 echo password_hash($_GET['pass'], PASSWORD_BCRYPT);
+?>

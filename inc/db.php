@@ -1,5 +1,5 @@
 <?php
-// Domaine ou IP du serveur ou est située la base de données
+// Domaine ou IP du serveur où est située la base de données
 define('HOST', 'localhost');
 // Nom d'utilisateur autorisé à se connecter à la base
 define('USER', 'root');

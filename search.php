@@ -21,28 +21,23 @@ if (!empty($_GET['search'])) {
 }
 
 if (!empty($_GET['style'])) {
-
 	$style = $_GET['style'];
-
 
 	// Search style
 	$query = $db->prepare('SELECT * FROM artists WHERE style LIKE :style');
 	$query->bindValue(':style', '%'.$style.'%', PDO::PARAM_STR);
 	$query->execute();
 	$search_results = $query->fetchAll();
+	$search = $style;
 	$count_search_results = $query->rowCount();
 }
 
 //FIXME : Merge search/style
-$search = $style;
-
+// $search = $style;
 ?>
 
-
 <div class="container">
-
 	<div class="row">
-
 		<div class="col-md-12">
 
 			<?php if (!empty($search) || !empty($style)) { ?>
@@ -55,7 +50,7 @@ $search = $style;
 					<?php
 					foreach($search_results as $key => $artist) {
 
-						//$picture = getCover($artist['id']);
+						// $picture = getCover($artist['id']);
 						$picture = '';
 					?>
 					<a href="search.php?id=<?= $search['id'] ?>" class="list-group-item clearfix">
@@ -67,9 +62,8 @@ $search = $style;
 					</a>
 					<?php } ?>
 				</div>
-
-			<?php } ?>
-
+			<?php 
+		} ?>
 			</div>
 		</div>
 	</div>
