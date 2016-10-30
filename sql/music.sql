@@ -518,12 +518,12 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Contenu de la table `user`
 --
 
-INSERT INTO `user` (`id`, `user_type`, `pseudo`, `login`, `password`, `date`) VALUES
-(1, 1, 'john', 'john@gmail.com', '$2y$10$5gSvm3ARCgpPyWHMgoy8guiqCmPNRUQ7C8FmoAxMZ63e3LdQAqYUK', '2016-05-09 10:16:47'),
-(2, 2, 'jon', 'jon@gmail.com', '$2y$10$UfY5Yq/tgLLzwbCLgvXgvOS3iRyzLqB0bzdhHHnJ1ghWSTv84KfVS', '2016-05-09 10:18:58'),
-(3, 1, 'jessy', 'jessy@gmail.com', '$2y$10$jwUqfZHpl2uFlvzhYjpMoe5A9HQTbmzNr4kA8h/lHQ6hWBB0uL0Na', '2016-05-09 11:18:21'),
-(4, 1, 'severin', 'severin@gmail.com', '$2y$10$JvMVh2HgqQUG8i8DeqgiruMFcfa9Xy5WURsGNfpNurj1vjS.HXQ3q', '2016-05-09 11:19:35'),
-(5, 1, 'yannick', 'yannick@gmail.com', '$2y$10$FVhkKwRlMRUMJVGDxfsS3ejOb0FiE.kFHOK4xs4EmHVqzSm0M3eUW', '2016-05-09 11:19:58');
+INSERT INTO `user` (`id`, `user_type`, `pseudo`) VALUES
+(1, 1, 'john'),
+(2, 2, 'jon'),
+(3, 1, 'jessy'),
+(4, 1, 'severin'),
+(5, 1, 'yannick');
 
 --
 -- Index pour les tables exportées
