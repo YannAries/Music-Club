@@ -1,3 +1,9 @@
 # fichiers et dossier HTML 
 html/
 *.html
+
+# Other files
+*.log
+/inc/.htaccess
+/inc/.htpasswd
+
